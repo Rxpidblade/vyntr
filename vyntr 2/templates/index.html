@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Solana Wallet Name Generator</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>🔐 Solana Wallet Generator</h1>
+        <form method="POST">
+            <button type="submit">Generate Wallet Name</button>
+        </form>
+        {% if wallet_name %}
+            <div class="result">Your wallet: <span>{{ wallet_name }}</span></div>
+        {% endif %}
+    </div>
+</body>
+</html>
